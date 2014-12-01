@@ -1,0 +1,82 @@
+// Carousel
+.carousel-search {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: $screen-md) {
+  .carousel-search {
+    max-height: 280px;
+    height: 280px;
+  }
+}
+@media (min-width: $screen-lg) {
+  .carousel-search {
+    max-height: 380px;
+    height: 380px;
+  }
+}
+
+.carousel-inner {
+  img {
+    min-height: 180px;
+    width: 100%;
+  }
+  @media (min-width: $screen-md) {
+    img {
+      max-height: 280px;
+      height: 280px;
+      width: 100%;
+    }
+  }
+  @media (min-width: $screen-lg) {
+    img {
+      max-height: 380px;
+      height: 380px;
+      width: 100%;
+    }
+  }
+
+
+
+}
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -200px;
+  width: 525px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $carousel-caption-color;
+  text-align: center;
+  text-shadow: $carousel-text-shadow;
+  & .btn {
+    text-shadow: none; // No shadow for button elements in carousel-caption
+  }
+  .form-control {
+    border-radius: 5px;
+    font-size: 24px;
+  }
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  span {
+    position: absolute;
+    bottom: 22px;
+    right: 3px;
+    background-color: #808080;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    img {
+      position: relative;
+      top: 2px;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+
+// Base
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+// MENU
+.client-type{
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 12px;
+  color: $app-base-blue !important;
+
+  a{
+
+    color: $app-base-gray !important;
+    &.active {
+      color: $app-base-blue !important;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    .nav{
+      li {
+        float: left;
+      }
+    }
+   }
+}
+
+.menu{
+    height: 140px;
+    .navbar-fixed-top{
+        padding: 10px;
+    }
+    .navbar-header{
+        .navbar-brand{
+            margin-left: 0;
+        }
+    }
+}
+// MAIN LAYOUT
+
+html,
+body{
+  height: 100%;
+  min-width: 360px;
+}
+
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
+.carousel-search{
+    padding-top: 20px;
+}
+
+.content{
+    padding-top: 20px;
+    padding-bottom: 277px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    height: 277px;
+    width: 100%;
+    color: #ffffff;
+    background-color: $app-footer-background;
+
+    h4{
+      font-size: 16px;
+    }
+
+    .smm {
+      .fa{
+        color: #696969;
+      }
+      .fa-twitter{
+        color: $white;
+        &:hover {
+          color: #55ACEE;
+        }
+      }
+      .fa-facebook{
+        color: $white;
+        &:hover {
+          color: #3b5998;
+        }
+      }
+      .fa-youtube{
+        color: $white;
+        &:hover {
+          color: #cc181e;
+        }
+      }
+      .fa-pinterest{
+        color: #696969;
+        &:hover {
+          color: #cc181e;
+        }
+      }
+      .fa-instagram{
+        color: $white;
+      }
+    }
+
+    a {
+      color: $white !important;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $light-grey;
+        text-decoration: underline;
+      }
+
+      &:focus {
+        @include tab-focus();
+      }
+    }
+
+    .subscribe{
+      h4{
+        font-size: 16px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+      }
+      div{
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+      input{
+        font-style: italic;
+      }
+    }
+
+  .subfooter {
+      border-top: 1px solid #ffffff;
+      margin-top: 15px;
+
+    .divider{
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        p {
+            text-align: center !important;
+        }
+    }
+
+  }
+}
+
+// Navigation
+#common-menu{
+    padding-top: 15px;
+    color: $app-brand-red;
+    font-weight: 700;
+
+    a{
+        color: $app-brand-red;
+    }
+}
+
+@media (max-width: $screen-sm){
+    #common-menu{
+        padding-top: 0;
+    }
+}
+
+.greeting {
+    color: $app-base-blue !important;
+}
+
+// Content
+.squers {
+  padding-top: 20px;
+
+  .item {
+    position: relative;
+    height: 230px;
+  }
+}
