@@ -6534,5 +6534,32 @@ html, body {
 .squers {
   padding-top: 20px; }
   .squers .item {
-    position: relative;
-    height: 230px; }
+    position: relative; }
+    .squers .item .item-wrapper {
+      position: relative; }
+    .squers .item .liner-background {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 40px;
+      background: #48474a;
+      opacity: 0.9; }
+    .squers .item .liner-text {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 20px;
+      padding-top: 5px; }
+
+.chef h1 {
+  font-size: 40px;
+  font-weight: 700; }
+.chef h2 {
+  font-size: 34px;
+  font-family: "Times New Roman", Times, serif; }
+.chef p, .chef a {
+  font-family: Arial, sans-serif;
+  font-size: 16px; }
