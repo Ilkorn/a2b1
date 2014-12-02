@@ -24,6 +24,24 @@
   }
 }
 
+#logo{
+  margin-top: -14px;
+}
+
+.dropdown-width-full{
+  /*use another parent for width base*/
+  position: static !important;
+  @media (max-width: $screen-md) {
+    position: relative;
+  }
+  
+  .width-full-parent{
+    left: 0;
+    right: 0;
+  }
+
+}
+
 .menu {
   height: 140px;
   .navbar-fixed-top {
@@ -56,4 +74,38 @@
 
 .greeting {
   color: $app-base-blue !important;
+}
+
+.navbar-mainmenu {
+  margin: 0;
+  .mainmenu-item {
+    border-right: 1px solid darken($brand-success, 6%);
+    box-shadow: inset -1px 0 0 lighten($brand-success, 6%);
+    &:first-child {
+      border-left: 1px solid darken($brand-success, 6%);
+      box-shadow: inset 1px 0 0 lighten($brand-success, 6%), inset -1px 0 0 lighten($brand-success, 6%);
+    }
+    @media (max-width: $screen-sm-min) {
+      &:first-child {
+        border-left: none;
+        box-shadow: inset -1px 0 0 lighten($brand-success, 6%);
+      }
+      &:last-child {
+        border-right: none;
+        box-shadow: none;
+      }
+    }
+    &.open {
+      background: $gray-lighter;
+    }
+  }
+
+  //Screen Sm devices
+  @media (max-width: $screen-md-min) {
+    margin-top: 45px;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    margin-top: 67px;
+  }
 }

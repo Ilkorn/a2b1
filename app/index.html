@@ -27,108 +27,228 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="container-fluid menu">
-    <div class="navbar navbar-default navbar-fixed-top">
+
+<header>
+    <!--// Choose client type-->
+    <div class="navbar navbar-default margin-bottom-clean" role="navigation">
         <div class="container">
-
-            <div class="row client-type">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="active" href="#common-menu">FOR CUSTOMER</a>
-                    </li>
-                    <li>
-                        <a href="#">FOR THE CHEF</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!--mobile menu button-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#common-menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="navbar-brand">
-                    <img class="visible-lg visible-md visible-xs" src="images/logo.png" alt="logo"/>
-                    <img class=" visible-sm" src="images/logo-small.png" alt="logo"/>
-                </div>
-            </div>
-
-            <div id="common-menu" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown">SHOP<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="">hello 1</a></li>
-                            <li><a href="">hello 2</a></li>
-                            <li><a href="">hello 3</a></li>
-                            <li><a href="">hello 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown">DISCOVER<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="">hello 1</a></li>
-                            <li><a href="">hello 2</a></li>
-                            <li><a href="">hello 3</a></li>
-                            <li><a href="">hello 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown">COMPANIES<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="">hello 1</a></li>
-                            <li><a href="">hello 2</a></li>
-                            <li><a href="">hello 3</a></li>
-                            <li><a href="">hello 4</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav pull-right">
-                    <li>
-                        <a class="greeting" href="#">
-                            Hi, John
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown">
-                            <img src="images/heart.png" alt=""/>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="">hello 1</a></li>
-                            <li><a href="">hello 2</a></li>
-                            <li><a href="">hello 3</a></li>
-                            <li><a href="">hello 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown">
-                            <img src="images/dialog.png" alt=""/>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="">hello 1</a></li>
-                            <li><a href="">hello 2</a></li>
-                            <li><a href="">hello 3</a></li>
-                            <li><a href="">hello 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown">
-                            <img src="images/location.png" alt=""/>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="">hello 1</a></li>
-                            <li><a href="">hello 2</a></li>
-                            <li><a href="">hello 3</a></li>
-                            <li><a href="">hello 4</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav client-type">
+                <li>
+                    <a class="active" href="#common-menu">FOR CUSTOMER</a>
+                </li>
+                <li>
+                    <a href="#">FOR THE CHEF</a>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
+
+    <!--// Navigation-->
+    <div id="common-menu" class="navbar navbar-default" role="navigation">
+        <div class="container" style="position: relative;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a id="logo" href="#">
+                        <img class="visible-lg visible-md visible-xs" src="images/logo.png" alt="logo"/>
+                        <img class=" visible-sm" src="images/logo-small.png" alt="logo"/>
+                    </a>
+                </li>
+                <li class="dropdown dropdown-width-full" >
+                    <a href="#" data-toggle="dropdown">SHOP<b class="caret"></b></a>
+                    <ul class="dropdown-menu width-full-parent" >
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-pills nav-stacked" role="tablist">
+                                        <li role="presentation"><a href="#dairyProduct" aria-controls="home" role="tab" data-toggle="tab">Dairy Product</a></li>
+                                        <li role="presentation"><a href="#eggs" aria-controls="profile" role="tab" data-toggle="tab">Eggs</a></li>
+                                        <li role="presentation"><a href="#bevarages" aria-controls="messages" role="tab" data-toggle="tab">Bevarages</a></li>
+                                        <li role="presentation"><a href="#speciality" aria-controls="settings" role="tab" data-toggle="tab">Speciality</a></li>
+                                        <li role="presentation"><a href="#supplies" aria-controls="settings" role="tab" data-toggle="tab">Supplies</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-9">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="dairyProduct">1</div>
+                                        <div role="tabpanel" class="tab-pane" id="eggs">2</div>
+                                        <div role="tabpanel" class="tab-pane" id="bevarages">3</div>
+                                        <div role="tabpanel" class="tab-pane" id="speciality">4</div>
+                                        <div role="tabpanel" class="tab-pane" id="supplies">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-width-full" >
+                    <a href="#" data-toggle="dropdown">DISCOVER<b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="left: 0; right: 0;">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" style="position:static; ">
+                    <a href="#" data-toggle="dropdown">COMPANIES<b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="left: 0; right: 0;">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a class="greeting" href="#">
+                        Hi, John
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <img src="images/heart.png" alt=""/>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <img src="images/dialog.png" alt=""/>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <img src="images/location.png" alt=""/>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<!--<div class="container-fluid menu">-->
+    <!--<div class="navbar navbar-default navbar-fixed-top">-->
+        <!--<div class="container">-->
+
+            <!--<div class="row client-type">-->
+                <!--<ul class="nav navbar-nav">-->
+                    <!--<li>-->
+                        <!--<a class="active" href="#common-menu">FOR CUSTOMER</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">FOR THE CHEF</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash;mobile menu button&ndash;&gt;-->
+            <!--<div class="navbar-header">-->
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#common-menu">-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+                <!--<div class="navbar-brand">-->
+                    <!--<img class="visible-lg visible-md visible-xs" src="images/logo.png" alt="logo"/>-->
+                    <!--<img class=" visible-sm" src="images/logo-small.png" alt="logo"/>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div id="common-menu" class="collapse navbar-collapse">-->
+                <!--<ul class="nav navbar-nav">-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" data-toggle="dropdown">SHOP<b class="caret"></b></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="">hello 1</a></li>-->
+                            <!--<li><a href="">hello 2</a></li>-->
+                            <!--<li><a href="">hello 3</a></li>-->
+                            <!--<li><a href="">hello 4</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" data-toggle="dropdown">DISCOVER<b class="caret"></b></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="">hello 1</a></li>-->
+                            <!--<li><a href="">hello 2</a></li>-->
+                            <!--<li><a href="">hello 3</a></li>-->
+                            <!--<li><a href="">hello 4</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" data-toggle="dropdown">COMPANIES<b class="caret"></b></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="">hello 1</a></li>-->
+                            <!--<li><a href="">hello 2</a></li>-->
+                            <!--<li><a href="">hello 3</a></li>-->
+                            <!--<li><a href="">hello 4</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <!--<ul class="nav navbar-nav pull-right">-->
+                    <!--<li>-->
+                        <!--<a class="greeting" href="#">-->
+                            <!--Hi, John-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" data-toggle="dropdown">-->
+                            <!--<img src="images/heart.png" alt=""/>-->
+                        <!--</a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="">hello 1</a></li>-->
+                            <!--<li><a href="">hello 2</a></li>-->
+                            <!--<li><a href="">hello 3</a></li>-->
+                            <!--<li><a href="">hello 4</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" data-toggle="dropdown">-->
+                            <!--<img src="images/dialog.png" alt=""/>-->
+                        <!--</a>-->
+                        <!--<ul class="dropdown-menu dropdown-menu-right">-->
+                            <!--<li><a href="">hello 1</a></li>-->
+                            <!--<li><a href="">hello 2</a></li>-->
+                            <!--<li><a href="">hello 3</a></li>-->
+                            <!--<li><a href="">hello 4</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" data-toggle="dropdown">-->
+                            <!--<img src="images/location.png" alt=""/>-->
+                        <!--</a>-->
+                        <!--<ul class="dropdown-menu dropdown-menu-right">-->
+                            <!--<li><a href="">hello 1</a></li>-->
+                            <!--<li><a href="">hello 2</a></li>-->
+                            <!--<li><a href="">hello 3</a></li>-->
+                            <!--<li><a href="">hello 4</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 <!--SEARCH FIELD FOR MOBILE-->
 <div class="container visible-xs visible-sm">
     <div class="">
@@ -264,215 +384,220 @@
 <div class="container">
 <div class="row footer-menu ">
 <div class="col-sm-9">
+<div class="row">
+<div class="col-sm-7 padding-horizontal-clean">
+    <div class="col-sm-4">
+        <h4 class="hidden-xs">Our Company</h4>
+        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                data-target="#footer-connect-footer" aria-expanded="false" aria-controls="footer-connect-footer">
+            Our Company
+        </button>
+        <div id="footer-connect-footer" class="footer-collapsed collapse">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">
+                        <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Our Partners</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Investors</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Pressroom</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Events</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <h4 class="hidden-xs">Custom service</h4>
+        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                data-target="#footer-custom-service" aria-expanded="false" aria-controls="footer-custom-service">
+            Custom service
+        </button>
+        <div id="footer-custom-service" class="footer-collapsed collapse">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">
+                        <span>Customer Service</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Shipping info</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Locations</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Feedback</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-sm-4">
+        <h4 class="hidden-xs">Help Center</h4>
+        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                data-target="#footer-help-center" aria-expanded="false" aria-controls="footer-help-center">
+            Help Center
+        </button>
+        <div id="footer-help-center" class="footer-collapsed collapse">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">
+                        <span>F.A.Q</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Product submissions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Vendor introdaction</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-5">
     <div class="row">
-        <div class="col-sm-7 padding-horizontal-clean">
-            <div class="col-sm-4">
-                <h4 class="hidden-xs">Our Company</h4>
-                <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse" data-target="#footer-connect-footer" aria-expanded="false" aria-controls="footer-connect-footer">
-                    Our Company
-                </button>
-                <div id="footer-connect-footer" class="footer-collapsed collapse">
-                    <ul class="list-unstyled">
+        <div class="col-sm-5">
+            <h4 class="hidden-xs">Other Sites</h4>
+            <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                    data-target="#footer-other-sites" aria-expanded="false" aria-controls="footer-other-sites">
+                Other Sites
+            </button>
+            <div id="footer-other-sites" class="footer-collapsed collapse">
+                <ul class="list-unstyled">
                     <li>
                         <a href="#">
-                            <span>About Us</span>
+                            <span>Allen brothers</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span>Our Partners</span>
+                            <span>Belcanto</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span>Investors</span>
+                            <span>Michael's</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span>Pressroom</span>
+                            Provvista
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span>Careers</span>
+                            Qzina
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span>Events</span>
-                        </a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <h4 class="hidden-xs">Custom service</h4>
-                <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse" data-target="#footer-custom-service" aria-expanded="false" aria-controls="footer-custom-service">
-                    Custom service
-                </button>
-                <div id="footer-custom-service" class="footer-collapsed collapse">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">
-                                <span>Customer Service</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Contact Us</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Shipping info</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Locations</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Feedback</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="col-sm-4">
-                <h4 class="hidden-xs">Help Center</h4>
-                <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse" data-target="#footer-help-center" aria-expanded="false" aria-controls="footer-help-center">
-                    Help Center
-                </button>
-                <div id="footer-help-center" class="footer-collapsed collapse">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">
-                                <span>F.A.Q</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Product submissions</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Vendor introdaction</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
 
-        <div class="col-sm-5">
-            <div class="row">
-                <div class="col-sm-5">
-                    <h4 class="hidden-xs">Other Sites</h4>
-                    <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse" data-target="#footer-other-sites" aria-expanded="false" aria-controls="footer-other-sites">
-                        Other Sites
-                    </button>
-                    <div id="footer-other-sites" class="footer-collapsed collapse">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#">
-                                    <span>Allen brothers</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Belcanto</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Michael's</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Provvista
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Qzina
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="col-sm-7">
+            <h4 class="hidden-xs">Stay Connected</h4>
+            <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                    data-target="#footer-stay-connected" aria-expanded="false" aria-controls="footer-stay-connected">
+                Stay Connected
+            </button>
 
-                <div class="col-sm-7">
-                    <h4 class="hidden-xs">Stay Connected</h4>
-                    <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse" data-target="#footer-stay-connected" aria-expanded="false" aria-controls="footer-stay-connected">
-                        Stay Connected
-                    </button>
-
-                    <div id="footer-stay-connected" class="smm footer-collapsed collapse">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#">
+            <div id="footer-stay-connected" class="smm footer-collapsed collapse">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle  fa-stack-2x"></i>
                                         <i class="fa fa-facebook fa-stack-1x"></i>
                                     </span>
-                                    <span class="visible-lg-inline visible-xs-inline">Find us on Facebook</span>
-                                    <span class="hidden-lg hidden-xs">Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
+                            <span class="visible-lg-inline visible-xs-inline">Find us on Facebook</span>
+                            <span class="hidden-lg hidden-xs">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle  fa-stack-2x"></i>
                                         <i class="fa fa-twitter fa-stack-1x"></i>
                                     </span>
-                                    <span class="visible-lg-inline visible-xs-inline">Follow us on Twitter</span>
-                                    <span class="hidden-lg hidden-xs">Twitter</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
+                            <span class="visible-lg-inline visible-xs-inline">Follow us on Twitter</span>
+                            <span class="hidden-lg hidden-xs">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle  fa-stack-2x"></i>
                                         <i class="fa fa-youtube fa-stack-1x"></i>
                                     </span>
-                                    <span class="visible-lg-inline visible-xs-inline">Watch our Video</span>
-                                    <span class="hidden-lg hidden-xs">Video</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
+                            <span class="visible-lg-inline visible-xs-inline">Watch our Video</span>
+                            <span class="hidden-lg hidden-xs">Video</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-pinterest fa-stack-2x"></i>
                                     </span>
-                                    <span class="visible-lg-inline visible-xs-inline">Find us on Pinterest</span>
-                                    <span class="hidden-lg hidden-xs">Pinterest</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
+                            <span class="visible-lg-inline visible-xs-inline">Find us on Pinterest</span>
+                            <span class="hidden-lg hidden-xs">Pinterest</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle  fa-stack-2x"></i>
                                         <i class="fa fa-instagram fa-stack-1x"></i>
                                     </span>
-                                    <span class="visible-lg-inline visible-xs-inline">Watch on Instagram</span>
-                                    <span class="hidden-lg hidden-xs">Instagram</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+                            <span class="visible-lg-inline visible-xs-inline">Watch on Instagram</span>
+                            <span class="hidden-lg hidden-xs">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+
     </div>
+</div>
+</div>
 </div>
 
 <div class="col-sm-3 subscribe">
