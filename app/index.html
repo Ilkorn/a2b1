@@ -71,7 +71,38 @@
                                 <div class="col-sm-9">
                                     <!-- Tab panes -->
                                     <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active" id="dairyProduct">1</div>
+                                        <div role="ex1" class="tab-pane active" id="dairyProduct">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <ul class="nav nav-pills nav-stacked" role="tablist">
+                                                        <li role="presentation"><a href="#a1" aria-controls="a1" role="tab" data-toggle="tab">Dai</a></li>
+                                                        <li role="presentation"><a href="#a2" aria-controls="a2" role="tab" data-toggle="tab">Egg</a></li>
+                                                        <li role="presentation"><a href="#a3" aria-controls="a3" role="tab" data-toggle="tab">Bev</a></li>
+                                                        <li role="presentation"><a href="#a4" aria-controls="a4" role="tab" data-toggle="tab">Spe</a></li>
+                                                        <li role="presentation"><a href="#a5" aria-controls="a5" role="tab" data-toggle="tab">Sup</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="tab-content">
+                                                        <div role="ex1" class="tab-pane" id="a1">
+                                                            <a href="#">1</a>
+                                                        </div>
+                                                        <div role="ex1" class="tab-pane" id="a2">
+                                                            <a href="#">2</a>
+                                                        </div>
+                                                        <div role="ex1" class="tab-pane" id="a3">
+                                                            <a href="#">3</a>
+                                                        </div>
+                                                        <div role="ex1" class="tab-pane" id="a4">
+                                                            <a href="#">4</a>
+                                                        </div>
+                                                        <div role="ex1" class="tab-pane" id="a5">
+                                                            <a href="#">5</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div role="tabpanel" class="tab-pane" id="eggs">2</div>
                                         <div role="tabpanel" class="tab-pane" id="bevarages">3</div>
                                         <div role="tabpanel" class="tab-pane" id="speciality">4</div>
@@ -83,9 +114,9 @@
 
                     </ul>
                 </li>
-                <li class="dropdown dropdown-width-full" >
+                <li class="dropdown" >
                     <a href="#" data-toggle="dropdown">DISCOVER<b class="caret"></b></a>
-                    <ul class="dropdown-menu" style="left: 0; right: 0;">
+                    <ul class="dropdown-menu" >
                         <li><a href="">hello 1</a></li>
                         <li><a href="">hello 2</a></li>
                         <li><a href="">hello 3</a></li>
@@ -108,15 +139,15 @@
                         Hi, John
                     </a>
                 </li>
-                <li class="dropdown">
+                <li id="favorite" class="dropdown">
                     <a href="#" data-toggle="dropdown">
                         <img src="images/heart.png" alt=""/>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="">hello 1</a></li>
-                        <li><a href="">hello 2</a></li>
-                        <li><a href="">hello 3</a></li>
-                        <li><a href="">hello 4</a></li>
+                        <li><a href="">Create New List</a></li>
+                        <li style="padding-left: 10px;"> My Favorite Lists</li>
+                        <li><a href="">Seafood Lists...</a></li>
+                        <li><a href="">Seafood Lists...</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -130,15 +161,28 @@
                         <li><a href="">hello 4</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown">
+                <li id="location" class="dropdown">
+                    <a  href="#" data-toggle="dropdown">
                         <img src="images/location.png" alt=""/>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="">hello 1</a></li>
-                        <li><a href="">hello 2</a></li>
-                        <li><a href="">hello 3</a></li>
-                        <li><a href="">hello 4</a></li>
+                        <li>
+                                <div class="row">
+                                    <div class="col-xs-12">Choose you location</div>
+                                    <div class="col-xs-12">
+                                        <select class="form-control" name="locatin" id="selectLocation" style="border: 0">
+                                            <option value="CH">Chicago</option>
+                                            <option value="NY">New York</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-6 col-xs-offset-6">
+                                        <div class="btn btn-primary btn-block">Apply</div>
+                                    </div>
+                                </div>
+
+                        </li>
+
+
                     </ul>
                 </li>
             </ul>
@@ -385,111 +429,113 @@
 <div class="row footer-menu ">
 <div class="col-sm-9">
 <div class="row">
-<div class="col-sm-7 padding-horizontal-clean">
-    <div class="col-sm-4">
-        <h4 class="hidden-xs">Our Company</h4>
-        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
-                data-target="#footer-connect-footer" aria-expanded="false" aria-controls="footer-connect-footer">
-            Our Company
-        </button>
-        <div id="footer-connect-footer" class="footer-collapsed collapse">
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#">
-                        <span>About Us</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Our Partners</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Investors</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Pressroom</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Careers</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Events</span>
-                    </a>
-                </li>
-            </ul>
+<div class="col-sm-7">
+    <div class="row">
+        <div class="col-sm-4">
+            <h4 class="hidden-xs">Our Company</h4>
+            <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                    data-target="#footer-connect-footer" aria-expanded="false" aria-controls="footer-connect-footer">
+                Our Company
+            </button>
+            <div id="footer-connect-footer" class="footer-collapsed collapse">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Our Partners</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Investors</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Pressroom</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Careers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Events</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="col-sm-4">
-        <h4 class="hidden-xs">Custom service</h4>
-        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
-                data-target="#footer-custom-service" aria-expanded="false" aria-controls="footer-custom-service">
-            Custom service
-        </button>
-        <div id="footer-custom-service" class="footer-collapsed collapse">
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#">
-                        <span>Customer Service</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Contact Us</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Shipping info</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Locations</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Feedback</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="col-sm-4">
+            <h4 class="hidden-xs">Custom service</h4>
+            <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                    data-target="#footer-custom-service" aria-expanded="false" aria-controls="footer-custom-service">
+                Custom service
+            </button>
+            <div id="footer-custom-service" class="footer-collapsed collapse">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <span>Customer Service</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Shipping info</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Locations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Feedback</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
 
-    <div class="col-sm-4">
-        <h4 class="hidden-xs">Help Center</h4>
-        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
-                data-target="#footer-help-center" aria-expanded="false" aria-controls="footer-help-center">
-            Help Center
-        </button>
-        <div id="footer-help-center" class="footer-collapsed collapse">
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#">
-                        <span>F.A.Q</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Product submissions</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Vendor introdaction</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="col-sm-4">
+            <h4 class="hidden-xs">Help Center</h4>
+            <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                    data-target="#footer-help-center" aria-expanded="false" aria-controls="footer-help-center">
+                Help Center
+            </button>
+            <div id="footer-help-center" class="footer-collapsed collapse">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <span>F.A.Q</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Product submissions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Vendor introdaction</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -602,13 +648,13 @@
 
 <div class="col-sm-3 subscribe">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-sm-12">
             <h4 class="hidden-xs" style="border-bottom: 1px solid #ffffff">Sing Up For Special Offers</h4>
         </div>
-        <div class="col-xs-12">
+        <div class="col-sm-12">
             <small>Receive all the latest offers and news from ChefsWarehouse.</small>
         </div>
-        <div class="col-xs-12">
+        <div class="col-sm-12">
             <input class="form-control" type="text" placeholder="Enter email address"/>
         </div>
     </div>

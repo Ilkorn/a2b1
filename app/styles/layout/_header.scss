@@ -34,7 +34,7 @@
   @media (max-width: $screen-md) {
     position: relative;
   }
-  
+
   .width-full-parent{
     left: 0;
     right: 0;
@@ -60,10 +60,26 @@
   padding-top: 15px;
   color: $app-brand-red;
   font-weight: 700;
+//
+//    .content{
+//        .btn-primary{
+//            background-color: $app-brand-red;
+//            &:hover{
+//                background-color: darken($app-brand-red, 5%) ;
+//            }
+//        }
+//    }
+}
 
-  a {
-    color: $app-brand-red;
-  }
+#location{
+    .btn-primary{
+        @include button-variant($btn-primary-color, $app-brand-red, darken($app-brand-red, 5%));
+    }
+}
+#favorite{
+    a, p, li {
+        color: #000000;
+    }
 }
 
 @media (max-width: $screen-sm) {
