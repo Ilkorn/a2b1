@@ -1,0 +1,176 @@
+.content {
+  @media (max-width: $screen-sm) {
+    padding-bottom: 20px;
+  }
+  @media (min-width: $screen-md-min) {
+    padding-bottom: $footer-full-size + 20;
+  }
+}
+
+.footer {
+  bottom: 0px;
+  height: $footer-full-size;
+  width: 100%;
+  color: #ffffff;
+  background-color: $app-footer-background;
+
+  @media (max-width: $screen-sm) {
+    position: relative;
+    height: 100%;
+  }
+
+  @media (min-width: $screen-md-min) {
+    position: absolute;
+    height: $footer-full-size;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  @media (max-width: $screen-md) {
+    h4 {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    .btn-block {
+      text-align: left;
+      color: $white;
+      background: lighten($app-footer-background, 5%);
+      @include transition-property(all);
+      @include transition-duration(0.2s);
+      position: relative;
+
+      + .btn-block {
+        border-bottom: none;
+      }
+
+      &:after {
+        font-family: 'FontAwesome';
+        content: "\f106";
+        float: right;
+        color: $white;
+        font-size: $font-size-large * 2;
+        line-height: $line-height-base - 0.7;
+        @include transition-property(all);
+        @include transition-duration(0.4s);
+        position: absolute;
+        top: 10px;
+        right: 15px;
+      }
+
+      &.collapsed {
+        &:after {
+          content: "\f107";
+        }
+      }
+    }
+    .list-unstyled {
+      margin-bottom: -1px;
+      li {
+        margin-bottom: 0;
+        a {
+          width: 100%;
+          padding: 10px 16px;
+          display: block;
+          font-size: $font-size-large - 4px;
+          border-bottom: 1px solid $gray-darker;
+
+          &:hover {
+            color: $brand-warning;
+
+            span {
+              border-bottom-color: transparent;
+            }
+          }
+
+          &:last-child {
+            // border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  .smm {
+    .fa {
+      color: #696969;
+    }
+    .fa-twitter {
+      color: $white;
+      &:hover {
+        color: #55ACEE;
+      }
+    }
+    .fa-facebook {
+      color: $white;
+      &:hover {
+        color: #3b5998;
+      }
+    }
+    .fa-youtube {
+      color: $white;
+      &:hover {
+        color: #cc181e;
+      }
+    }
+    .fa-pinterest {
+      color: #696969;
+      &:hover {
+        color: #cc181e;
+      }
+    }
+    .fa-instagram {
+      color: $white;
+    }
+  }
+
+  a {
+    color: $white !important;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $light-grey;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      @include tab-focus();
+    }
+  }
+
+  .subscribe {
+    h4 {
+      font-size: 16px;
+      padding-bottom: 5px;
+      margin-bottom: 0;
+    }
+    div {
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+    input {
+      font-style: italic;
+    }
+  }
+
+  .subfooter {
+    border-top: 1px solid #ffffff;
+    margin-top: 15px;
+
+    .divider {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      p {
+        text-align: center !important;
+      }
+    }
+
+  }
+}

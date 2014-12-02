@@ -1,0 +1,59 @@
+// MENU
+.client-type {
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 12px;
+  color: $app-base-blue !important;
+
+  a {
+
+    color: $app-base-gray !important;
+    &.active {
+      color: $app-base-blue !important;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    .nav {
+      li {
+        float: left;
+      }
+    }
+  }
+}
+
+.menu {
+  height: 140px;
+  .navbar-fixed-top {
+    padding: 10px;
+  }
+  .navbar-header {
+    .navbar-brand {
+      margin-left: 0;
+    }
+  }
+}
+
+
+// Navigation
+#common-menu {
+  padding-top: 15px;
+  color: $app-brand-red;
+  font-weight: 700;
+
+  a {
+    color: $app-brand-red;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  #common-menu {
+    padding-top: 0;
+  }
+}
+
+.greeting {
+  color: $app-base-blue !important;
+}

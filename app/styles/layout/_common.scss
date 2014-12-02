@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+  min-width: 360px;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.carousel-search {
+  padding-top: 20px;
+}
+
+.content {
+  padding-top: 20px;
+
+
+  @media (max-width: $screen-sm) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding-bottom: $footer-full-size + 20;
+  }
+}
+
+.padding-horizontal-clean {
+  padding-left: 0;
+  padding-right: 0;
+}
