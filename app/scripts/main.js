@@ -19,10 +19,4 @@
         }
     });
 
-//
-//    $('.nav-tabs > li').find('a').click( function(){
-//        $(this).parent()
-//            .siblings().addClass('hoverblock');
-//    });
-
 })();
