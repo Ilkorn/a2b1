@@ -29,121 +29,224 @@
 
 
 <header>
-    <!--// Choose client type-->
-    <div class="navbar navbar-default margin-bottom-clean" role="navigation">
-        <div class="container">
-            <ul class="nav navbar-nav client-type">
-                <li>
-                    <a class="active" href="#common-menu">FOR CUSTOMER</a>
-                </li>
-                <li>
-                    <a href="#">FOR THE CHEF</a>
-                </li>
-            </ul>
-        </div>
+<!--// Choose client type-->
+<div class="navbar navbar-default margin-bottom-clean" role="navigation">
+    <div class="container">
+        <ul id="clientType" class="nav navbar-nav client-type">
+            <li class="col-sm-pull-left">
+                <a id="typeCustomer" class="active" href="#">FOR CUSTOMER</a>
+            </li>
+            <li class="col-sm-pull-left">
+                <a id="typeChef" href="#">FOR THE CHEF</a>
+            </li>
+        </ul>
     </div>
+</div>
 
-    <!--// Navigation-->
-    <div id="common-menu" class="navbar navbar-default" role="navigation">
-        <div class="container" style="position: relative;">
-            <ul class="nav navbar-nav">
+<!--// Navigation-->
+<div id="common-menu" class="navbar navbar-default" role="navigation">
+<div class="container dropdown-parent">
+    <ul class="nav navbar-nav">
+        <li>
+            <a id="logo" href="#">
+                <img class="visible-lg visible-md visible-xs" src="images/logo.png" alt="logo"/>
+                <img class=" visible-sm" src="images/logo-small.png" alt="logo"/>
+            </a>
+        </li>
+        <li class="dropdown dropdown-ignore-parent" >
+            <a href="#" data-toggle="dropdown">SHOP<b class="caret"></b></a>
+            <ul class="dropdown-menu width-full-parent" >
                 <li>
-                    <a id="logo" href="#">
-                        <img class="visible-lg visible-md visible-xs" src="images/logo.png" alt="logo"/>
-                        <img class=" visible-sm" src="images/logo-small.png" alt="logo"/>
-                    </a>
-                </li>
-                <li class="dropdown dropdown-width-full" >
-                    <a href="#" data-toggle="dropdown">SHOP<b class="caret"></b></a>
-                    <ul class="dropdown-menu width-full-parent" >
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-pills nav-stacked" role="tablist">
-                                        <li role="presentation"><a href="#dairyProduct" aria-controls="home" role="tab" data-toggle="tab">Dairy Product</a></li>
-                                        <li role="presentation"><a href="#eggs" aria-controls="profile" role="tab" data-toggle="tab">Eggs</a></li>
-                                        <li role="presentation"><a href="#bevarages" aria-controls="messages" role="tab" data-toggle="tab">Bevarages</a></li>
-                                        <li role="presentation"><a href="#speciality" aria-controls="settings" role="tab" data-toggle="tab">Speciality</a></li>
-                                        <li role="presentation"><a href="#supplies" aria-controls="settings" role="tab" data-toggle="tab">Supplies</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-9">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active" id="dairyProduct">1</div>
-                                        <div role="tabpanel" class="tab-pane" id="eggs">2</div>
-                                        <div role="tabpanel" class="tab-pane" id="bevarages">3</div>
-                                        <div role="tabpanel" class="tab-pane" id="speciality">4</div>
-                                        <div role="tabpanel" class="tab-pane" id="supplies">4</div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills nav-stacked" role="tablist">
+                                <li role="presentation"><a href="#dairyProduct" aria-controls="home" role="tab" data-toggle="tab">Dairy Product</a></li>
+                                <li role="presentation"><a href="#eggs" aria-controls="profile" role="tab" data-toggle="tab">Eggs</a></li>
+                                <li role="presentation"><a href="#bevarages" aria-controls="messages" role="tab" data-toggle="tab">Bevarages</a></li>
+                                <li role="presentation"><a href="#speciality" aria-controls="settings" role="tab" data-toggle="tab">Speciality</a></li>
+                                <li role="presentation"><a href="#supplies" aria-controls="settings" role="tab" data-toggle="tab">Supplies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-9">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="ex1" class="tab-pane active" id="dairyProduct">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul class="nav nav-pills nav-stacked" role="tablist">
+                                                <li role="presentation"><a href="#a1" aria-controls="a1" role="tab" data-toggle="tab">Dai</a></li>
+                                                <li role="presentation"><a href="#a2" aria-controls="a2" role="tab" data-toggle="tab">Egg</a></li>
+                                                <li role="presentation"><a href="#a3" aria-controls="a3" role="tab" data-toggle="tab">Bev</a></li>
+                                                <li role="presentation"><a href="#a4" aria-controls="a4" role="tab" data-toggle="tab">Spe</a></li>
+                                                <li role="presentation"><a href="#a5" aria-controls="a5" role="tab" data-toggle="tab">Sup</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="tab-content">
+                                                <div role="ex1" class="tab-pane" id="a1">
+                                                    <a href="#">1</a>
+                                                </div>
+                                                <div role="ex1" class="tab-pane" id="a2">
+                                                    <a href="#">2</a>
+                                                </div>
+                                                <div role="ex1" class="tab-pane" id="a3">
+                                                    <a href="#">3</a>
+                                                </div>
+                                                <div role="ex1" class="tab-pane" id="a4">
+                                                    <a href="#">4</a>
+                                                </div>
+                                                <div role="ex1" class="tab-pane" id="a5">
+                                                    <a href="#">5</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div role="tabpanel" class="tab-pane" id="eggs">2</div>
+                                <div role="tabpanel" class="tab-pane" id="bevarages">3</div>
+                                <div role="tabpanel" class="tab-pane" id="speciality">4</div>
+                                <div role="tabpanel" class="tab-pane" id="supplies">4</div>
                             </div>
-                        </li>
+                        </div>
+                    </div>
+                </li>
 
-                    </ul>
-                </li>
-                <li class="dropdown dropdown-width-full" >
-                    <a href="#" data-toggle="dropdown">DISCOVER<b class="caret"></b></a>
-                    <ul class="dropdown-menu" style="left: 0; right: 0;">
-                        <li><a href="">hello 1</a></li>
-                        <li><a href="">hello 2</a></li>
-                        <li><a href="">hello 3</a></li>
-                        <li><a href="">hello 4</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown" style="position:static; ">
-                    <a href="#" data-toggle="dropdown">COMPANIES<b class="caret"></b></a>
-                    <ul class="dropdown-menu" style="left: 0; right: 0;">
-                        <li><a href="">hello 1</a></li>
-                        <li><a href="">hello 2</a></li>
-                        <li><a href="">hello 3</a></li>
-                        <li><a href="">hello 4</a></li>
-                    </ul>
-                </li>
             </ul>
-            <ul class="nav navbar-nav pull-right">
+        </li>
+        <li class="dropdown" >
+            <a href="#" data-toggle="dropdown">DISCOVER<b class="caret"></b></a>
+            <ul class="dropdown-menu" >
+                <li><a href="">hello 1</a></li>
+                <li><a href="">hello 2</a></li>
+                <li><a href="">hello 3</a></li>
+                <li><a href="">hello 4</a></li>
+            </ul>
+        </li>
+        <li class="dropdown" style="position:static; ">
+            <a href="#" data-toggle="dropdown">COMPANIES<b class="caret"></b></a>
+            <ul class="dropdown-menu" style="left: 0; right: 0;">
+                <li><a href="">hello 1</a></li>
+                <li><a href="">hello 2</a></li>
+                <li><a href="">hello 3</a></li>
+                <li><a href="">hello 4</a></li>
+            </ul>
+        </li>
+
+        <!-- mibile menu-->
+        <li class="dropdown visible-xs visible-sm" >
+            <a href="#" data-toggle="dropdown">FAVORIT<b class="caret"></b></a>
+            <ul class="dropdown-menu" >
+                <li><a href="#">Create New List</a></li>
+                <li style="padding-left: 10px;"> My Favorite Lists</li>
+                <li><a href="#">Seafood Lists...</a></li>
+                <li><a href="#">Seafood Lists...</a></li>
+            </ul>
+        </li>
+        <li class="dropdown visible-xs visible-sm" >
+            <a href="#" data-toggle="dropdown">DIALOG<b class="caret"></b></a>
+            <ul class="dropdown-menu" >
+                <li><a href="#">Dialog 1</a></li>
+                <li><a href="#">Dialog 2</a></li>
+                <li><a href="#">Dialog 3</a></li>
+                <li><a href="#">Dialog 4</a></li>
+            </ul>
+        </li>
+        <li class="dropdown visible-xs visible-sm" >
+            <a href="#" data-toggle="dropdown">LOCATION<b class="caret"></b></a>
+            <ul class="dropdown-menu" >
                 <li>
-                    <a class="greeting" href="#">
-                        Hi, John
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown">
-                        <img src="images/heart.png" alt=""/>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="">hello 1</a></li>
-                        <li><a href="">hello 2</a></li>
-                        <li><a href="">hello 3</a></li>
-                        <li><a href="">hello 4</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown">
-                        <img src="images/dialog.png" alt=""/>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="">hello 1</a></li>
-                        <li><a href="">hello 2</a></li>
-                        <li><a href="">hello 3</a></li>
-                        <li><a href="">hello 4</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown">
-                        <img src="images/location.png" alt=""/>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="">hello 1</a></li>
-                        <li><a href="">hello 2</a></li>
-                        <li><a href="">hello 3</a></li>
-                        <li><a href="">hello 4</a></li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-sm-12">Choose you location</div>
+                        <div class="col-sm-12" id="selectLocationMobile">
+                            <select class="form-control" name="locatin" id="selectLocationMobile" style="border: 0">
+                                <option value="CH">Chicago</option>
+                                <option value="NY">New York</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12">
+                            <div id="applyLocationMobile" class="btn btn-red-branded btn-block">Apply</div>
+                        </div>
+                    </div>
                 </li>
             </ul>
-        </div>
-    </div>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
+        <li>
+            <a class="greeting" href="#">
+                Hi, John
+            </a>
+        </li>
+        <li id="favorite" class="dropdown">
+            <a href="#" data-toggle="dropdown">
+                <img src="images/heart.png" alt=""/>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Create New List</a></li>
+                <li style="padding-left: 10px;"> My Favorite Lists</li>
+                <li><a href="#">Seafood Lists...</a></li>
+                <li><a href="#">Seafood Lists...</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown">
+                <img src="images/dialog.png" alt=""/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="">hello 1</a></li>
+                <li><a href="">hello 2</a></li>
+                <li><a href="">hello 3</a></li>
+                <li><a href="">hello 4</a></li>
+            </ul>
+        </li>
+        <li id="location" class="dropdown">
+            <a  href="#" data-toggle="dropdown">
+                <img src="images/location.png" alt=""/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                    <div class="row" id="selectLocation">
+                        <div class="col-sm-12">Choose you location</div>
+                        <div class="col-sm-12">
+                            <select class="form-control" name="locatin"  style="border: 0">
+                                <option value="CH">Chicago</option>
+                                <option value="NY">New York</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-xs-offset-6">
+                            <div id="applyLocation" class="btn btn-red-branded btn-block">Apply</div>
+                        </div>
+                    </div>
+
+                </li>
+
+
+            </ul>
+        </li>
+        <li id="cart" class="dropdown customer-only">
+            <a  href="#" data-toggle="dropdown">
+                <img src="images/location.png" alt=""/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                    dsad
+                </li>
+            </ul>
+        </li>
+        <li id="list" class="dropdown chefs-only hide">
+            <a  href="#" data-toggle="dropdown">
+                <img src="images/heart.png" alt=""/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                    dsad
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
 </header>
 
 
@@ -180,24 +283,311 @@
 
 <!--CONTENT-->
 <div class="container content">
-    <div class="row">
+    <div class="row loginRegistration">
+        <!--LOGIN-->
         <div class="col-md-6">
+            <h3>Returning Customer</h3>
+            <p>If you already have an account, please sing in bellow:</p>
             <div class="form-horizontal" role="form">
-
+                <div class="form-group has-error">
+                    <label class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control input-lg" id="email" placeholder="" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control input-lg" id="password" placeholder="" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="rememberMe" class="col-sm-10 col-sm-offset-2">
+                        <input id="rememberMe" type="checkbox"/> Remember me
+                    </label>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-red-branded pull-right">Sing In</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!--REGISTRATION-->
         <div class="col-md-6">
-            <div class="form-group has-error">
-                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control input-lg" id="inputEmail3" placeholder="" required>
+            <h2>New Customer</h2>
+
+            <div class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">First Name*</label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder="" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control input-lg" id="inputPassword3" placeholder="" required>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Last Name*</label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder=""
+                               required>
+                    </div>
                 </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Address 1*</label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder=""
+                               required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Address 2*</label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">City/State/Zip*</label>
+
+                    <div class="col-sm-9">
+                        <div class="inline-form" role="form">
+                            <div class="form-group">
+                                <div >
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control input-lg" placeholder="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <select class="form-control" >
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control input-lg" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Role*</label>
+
+                    <div class="col-sm-9">
+                        <div class="inline-form" role="form">
+                            <div class="form-group">
+                                <div>
+                                    <div class="col-sm-6">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" value="option1" checked>
+                                                Chef
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" value="option2">
+                                                Consumer
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" value="option3" checked>
+                                                Buyer/Purchaser
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios"  value="option4">
+                                                Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Are you currently a customer of The Chef's Warehouse? *</label>
+
+                    <div class="col-sm-9">
+                        <div class="inline-form" role="form">
+                            <div class="form-group">
+                                <div>
+                                    <div class="col-sm-6">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" value="option1" checked>
+                                                Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios"  value="option2">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Phone Number *</label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Entity Name</label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Email *</label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Confirm Email *</label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"></label>
+
+                    <div class="col-sm-9">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="subscribe">
+                                <strong>Yes</strong>, I whould like to recieve news and special offers.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-8">
+                        <div class="inline-form">
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">Password*</label>
+
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control input-lg" placeholder="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-form">
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">Confirm Password*</label>
+
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control input-lg" placeholder="" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                Password is case sensitive and must be at least 6 characters long
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Interests:</label>
+
+                    <div class="col-sm-9">
+                        <div class="inline-form" role="form">
+                            <div class="form-group">
+                                <div>
+                                    <div class="col-sm-6">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" checked> Baking and Pastry
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Beverages
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Center of the Plate
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Cheese and Charcutelie
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" checked> Dairy and Eggs
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Dry Goods and Pantry
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Specialty
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Supplies
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="btn btn-red-branded btn-lg pull-right">Create My Account</div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>

@@ -1,6 +1,12 @@
 .margin-bottom-clean{
   margin-bottom: 0;
 }
+.padding-left-20{
+  padding-left: 20px;
+}
+.margin-left-20{
+  margin-left: 20px;
+}
 @media (max-width: $screen-md-min){
   .col-sm-pull-left {
     float: left;

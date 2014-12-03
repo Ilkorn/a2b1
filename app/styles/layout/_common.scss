@@ -17,11 +17,11 @@ body {
   padding-top: 20px;
 
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-xs) {
     padding-bottom: 20px;
   }
 
-  @media (min-width: $screen-md-min) {
+  @media (min-width: $screen-sm-min) {
     padding-bottom: $footer-full-size + 20;
   }
 }
