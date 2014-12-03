@@ -7,9 +7,11 @@
     $('#clientType').find('a').on('click', changeNavigationIfClientTypeChanged);
 
     $('#selectLocation').click(function(event){
-
         event.stopPropagation();
-//       $(this).preventDefault();
+    });
+
+    $('#selectLocationMobile').click(function(event){
+        event.stopPropagation();
     });
 
     function showDecollapsedMenu(){
@@ -44,9 +46,4 @@
             $(this).find('a').tab('show');
         }
     }
-
-
-
-
-
 })();

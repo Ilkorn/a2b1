@@ -32,18 +32,21 @@
   margin-top: -14px;
 }
 
-.dropdown-width-full{
-  /*use another parent for width base*/
-  position: static !important;
-  @media (max-width: $screen-md) {
-    position: relative;
-  }
+.dropdown-parent {
+  position: relative;
 
-  .width-full-parent{
-    left: 0;
-    right: 0;
-  }
+  .dropdown-ignore-parent{
+    /*use another parent for width base*/
+    position: static !important;
+    @media (max-width: $screen-md) {
+      position: relative;
+    }
 
+    .width-full-parent{
+      left: 0;
+      right: 0;
+    }
+  }
 }
 
 .menu {
@@ -64,22 +67,19 @@
   padding-top: 15px;
   color: $app-brand-red;
   font-weight: 700;
-//
-//    .content{
-//        .btn-primary{
-//            background-color: $app-brand-red;
-//            &:hover{
-//                background-color: darken($app-brand-red, 5%) ;
-//            }
-//        }
-//    }
 }
 
 #location{
-    .btn-primary{
-        @include button-variant($btn-primary-color, $app-brand-red, darken($app-brand-red, 5%));
+    ul{
+      width: 200px;
+      padding: 10px;
     }
 }
+
+.btn-red-branded{
+  @include button-variant($btn-primary-color, $app-brand-red, darken($app-brand-red, 5%));
+}
+
 #favorite{
     a, p, li {
         color: #000000;

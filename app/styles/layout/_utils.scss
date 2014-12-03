@@ -1,3 +1,11 @@
 .margin-bottom-clean{
   margin-bottom: 0;
 }
+@media (max-width: $screen-md-min){
+  .col-sm-pull-left {
+    float: left;
+  }
+  .col-sm-clear {
+    clear: both;
+  }
+}
