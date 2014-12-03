@@ -18,5 +18,11 @@
             $(this).find('a').tab('show');
         }
     });
+    $('#clientType').find('a').on('click', function(event, item){
+        $('#clientType').find('a').removeClass('active')
+        $(this).addClass('active');
+    })
+
+
 
 })();

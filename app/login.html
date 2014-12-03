@@ -1,0 +1,492 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>src1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<div class="wrapper">
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<header>
+    <!--// Choose client type-->
+    <div class="navbar navbar-default margin-bottom-clean" role="navigation">
+        <div class="container">
+            <ul class="nav navbar-nav client-type">
+                <li>
+                    <a class="active" href="#common-menu">FOR CUSTOMER</a>
+                </li>
+                <li>
+                    <a href="#">FOR THE CHEF</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--// Navigation-->
+    <div id="common-menu" class="navbar navbar-default" role="navigation">
+        <div class="container" style="position: relative;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a id="logo" href="#">
+                        <img class="visible-lg visible-md visible-xs" src="images/logo.png" alt="logo"/>
+                        <img class=" visible-sm" src="images/logo-small.png" alt="logo"/>
+                    </a>
+                </li>
+                <li class="dropdown dropdown-width-full" >
+                    <a href="#" data-toggle="dropdown">SHOP<b class="caret"></b></a>
+                    <ul class="dropdown-menu width-full-parent" >
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-pills nav-stacked" role="tablist">
+                                        <li role="presentation"><a href="#dairyProduct" aria-controls="home" role="tab" data-toggle="tab">Dairy Product</a></li>
+                                        <li role="presentation"><a href="#eggs" aria-controls="profile" role="tab" data-toggle="tab">Eggs</a></li>
+                                        <li role="presentation"><a href="#bevarages" aria-controls="messages" role="tab" data-toggle="tab">Bevarages</a></li>
+                                        <li role="presentation"><a href="#speciality" aria-controls="settings" role="tab" data-toggle="tab">Speciality</a></li>
+                                        <li role="presentation"><a href="#supplies" aria-controls="settings" role="tab" data-toggle="tab">Supplies</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-9">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="dairyProduct">1</div>
+                                        <div role="tabpanel" class="tab-pane" id="eggs">2</div>
+                                        <div role="tabpanel" class="tab-pane" id="bevarages">3</div>
+                                        <div role="tabpanel" class="tab-pane" id="speciality">4</div>
+                                        <div role="tabpanel" class="tab-pane" id="supplies">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-width-full" >
+                    <a href="#" data-toggle="dropdown">DISCOVER<b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="left: 0; right: 0;">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" style="position:static; ">
+                    <a href="#" data-toggle="dropdown">COMPANIES<b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="left: 0; right: 0;">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a class="greeting" href="#">
+                        Hi, John
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <img src="images/heart.png" alt=""/>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <img src="images/dialog.png" alt=""/>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <img src="images/location.png" alt=""/>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="">hello 1</a></li>
+                        <li><a href="">hello 2</a></li>
+                        <li><a href="">hello 3</a></li>
+                        <li><a href="">hello 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<!--SEARCH FIELD FOR MOBILE-->
+<div class="container visible-xs visible-sm">
+    <div class="">
+        <input type="text" class="form-control" placeholder="Search ingredients"/>
+    </div>
+</div>
+<!--CAROUSEL-->
+<div class="container-fluid carousel-search hidden-xs hidden-sm">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/carousel_green_food.jpg" alt="green food">
+            </div>
+
+            <div class="item">
+                <img src="images/carousel_sandwich.jpg" alt="sandwich">
+            </div>
+        </div>
+
+        <div class="carousel-caption">
+            <div class="title">Where the Chef's Shop</div>
+            <input type="text" class="form-control" placeholder="Search ingredients"/>
+            <span><img src="images/find.png" alt="find icon"/></span>
+        </div>
+
+    </div>
+</div>
+
+
+<!--CONTENT-->
+<div class="container content">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-horizontal" role="form">
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group has-error">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control input-lg" id="inputEmail3" placeholder="" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control input-lg" id="inputPassword3" placeholder="" required>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--FOOTER-->
+<div class="footer">
+<div class="container">
+<div class="row footer-menu ">
+<div class="col-sm-9">
+<div class="row">
+<div class="col-sm-7 padding-horizontal-clean">
+    <div class="col-sm-4">
+        <h4 class="hidden-xs">Our Company</h4>
+        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                data-target="#footer-connect-footer" aria-expanded="false" aria-controls="footer-connect-footer">
+            Our Company
+        </button>
+        <div id="footer-connect-footer" class="footer-collapsed collapse">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">
+                        <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Our Partners</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Investors</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Pressroom</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Events</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <h4 class="hidden-xs">Custom service</h4>
+        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                data-target="#footer-custom-service" aria-expanded="false" aria-controls="footer-custom-service">
+            Custom service
+        </button>
+        <div id="footer-custom-service" class="footer-collapsed collapse">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">
+                        <span>Customer Service</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Shipping info</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Locations</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Feedback</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-sm-4">
+        <h4 class="hidden-xs">Help Center</h4>
+        <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                data-target="#footer-help-center" aria-expanded="false" aria-controls="footer-help-center">
+            Help Center
+        </button>
+        <div id="footer-help-center" class="footer-collapsed collapse">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">
+                        <span>F.A.Q</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Product submissions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Vendor introdaction</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-5">
+    <div class="row">
+        <div class="col-sm-5">
+            <h4 class="hidden-xs">Other Sites</h4>
+            <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                    data-target="#footer-other-sites" aria-expanded="false" aria-controls="footer-other-sites">
+                Other Sites
+            </button>
+            <div id="footer-other-sites" class="footer-collapsed collapse">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <span>Allen brothers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Belcanto</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Michael's</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Provvista
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Qzina
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-7">
+            <h4 class="hidden-xs">Stay Connected</h4>
+            <button type="button" class="btn btn-lg btn-block visible-xs collapsed" data-toggle="collapse"
+                    data-target="#footer-stay-connected" aria-expanded="false" aria-controls="footer-stay-connected">
+                Stay Connected
+            </button>
+
+            <div id="footer-stay-connected" class="smm footer-collapsed collapse">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle  fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x"></i>
+                                    </span>
+                            <span class="visible-lg-inline visible-xs-inline">Find us on Facebook</span>
+                            <span class="hidden-lg hidden-xs">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle  fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x"></i>
+                                    </span>
+                            <span class="visible-lg-inline visible-xs-inline">Follow us on Twitter</span>
+                            <span class="hidden-lg hidden-xs">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle  fa-stack-2x"></i>
+                                        <i class="fa fa-youtube fa-stack-1x"></i>
+                                    </span>
+                            <span class="visible-lg-inline visible-xs-inline">Watch our Video</span>
+                            <span class="hidden-lg hidden-xs">Video</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-pinterest fa-stack-2x"></i>
+                                    </span>
+                            <span class="visible-lg-inline visible-xs-inline">Find us on Pinterest</span>
+                            <span class="hidden-lg hidden-xs">Pinterest</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle  fa-stack-2x"></i>
+                                        <i class="fa fa-instagram fa-stack-1x"></i>
+                                    </span>
+                            <span class="visible-lg-inline visible-xs-inline">Watch on Instagram</span>
+                            <span class="hidden-lg hidden-xs">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-3 subscribe">
+    <div class="row">
+        <div class="col-xs-12">
+            <h4 class="hidden-xs" style="border-bottom: 1px solid #ffffff">Sing Up For Special Offers</h4>
+        </div>
+        <div class="col-xs-12">
+            <small>Receive all the latest offers and news from ChefsWarehouse.</small>
+        </div>
+        <div class="col-xs-12">
+            <input class="form-control" type="text" placeholder="Enter email address"/>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="row subfooter">
+    <div class="col-lg-6 col-md-6 col-sm-5 xs-12">
+        <p>
+            <small>© 2014 Cheif's Warehouse. All right reserved.</small>
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-7 xs-12">
+        <p class="text-right">
+            <small>
+                <span>Privacy policy</span>
+                <span class="divider">|</span>
+                <span>Term of Use</span>
+                <span class="divider">|</span>
+                <span>Site Map</span>
+            </small>
+        </p>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

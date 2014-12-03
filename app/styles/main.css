@@ -6465,8 +6465,26 @@ html, body {
   padding-top: 15px;
   color: #95012c;
   font-weight: 700; }
-  #common-menu a {
-    color: #95012c; }
+
+#location .btn-primary {
+  color: #fff;
+  background-color: #95012c;
+  border-color: #7c0126; }
+  #location .btn-primary:hover, #location .btn-primary:focus, #location .btn-primary:active, #location .btn-primary.active, .open > #location .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #62011e;
+    border-color: #3f0013; }
+  #location .btn-primary:active, #location .btn-primary.active, .open > #location .btn-primary.dropdown-toggle {
+    background-image: none; }
+  #location .btn-primary.disabled, #location .btn-primary.disabled:hover, #location .btn-primary.disabled:focus, #location .btn-primary.disabled:active, #location .btn-primary.disabled.active, #location .btn-primary[disabled], #location .btn-primary[disabled]:hover, #location .btn-primary[disabled]:focus, #location .btn-primary[disabled]:active, #location .btn-primary[disabled].active, fieldset[disabled] #location .btn-primary, fieldset[disabled] #location .btn-primary:hover, fieldset[disabled] #location .btn-primary:focus, fieldset[disabled] #location .btn-primary:active, fieldset[disabled] #location .btn-primary.active {
+    background-color: #95012c;
+    border-color: #7c0126; }
+  #location .btn-primary .badge {
+    color: #95012c;
+    background-color: #fff; }
+
+#favorite a, #favorite p, #favorite li {
+  color: #000000; }
 
 @media (max-width: 768px) {
   #common-menu {
@@ -6553,6 +6571,8 @@ html, body {
 .chef p, .chef a {
   font-family: Arial, sans-serif;
   font-size: 16px; }
+.chef a {
+  color: #428bca !important; }
 
 @media (max-width: 768px) {
   .content {
@@ -6651,10 +6671,11 @@ html, body {
   .footer .subscribe h4 {
     font-size: 16px;
     padding-bottom: 5px;
-    margin-bottom: 0; }
-  .footer .subscribe div {
-    padding-bottom: 5px;
-    padding-top: 5px; }
+    margin-bottom: 0;
+    margin-top: 0; }
+  .footer .subscribe .row div {
+    padding-bottom: 10px;
+    padding-top: 10px; }
   .footer .subscribe input {
     font-style: italic; }
   .footer .subfooter {
