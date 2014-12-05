@@ -3,19 +3,15 @@
   margin-left: 0;
   margin-right: 0;
   font-size: 12px;
-//  color: $app-base-blue !important;
+  color: $app-base-blue !important;
 
   a {
 
-//    color: $app-base-gray !important;
-    &.active{
-
+    color: $app-base-gray !important;
+    &.active {
       color: $app-base-blue !important;
       font-weight: 700;
-      text-decoration: none;
-      &:focus, &:hover {
-
-      }
+      text-decoration: underline;
     }
   }
 
@@ -27,6 +23,18 @@
     }
   }
 }
+
+//.menu {
+//  height: 140px;
+//  .navbar-fixed-top {
+//    padding: 10px;
+//  }
+//  .navbar-header {
+//    .navbar-brand {
+//      margin-left: 0;
+//    }
+//  }
+//}
 
 #logo{
   margin-top: -14px;
@@ -69,7 +77,7 @@
   font-weight: 700;
 }
 
-#location{
+#login{
     ul{
       width: 200px;
       padding: 10px;
