@@ -4,9 +4,19 @@
 
     $('.nav-pills > li ').hover(correctNavigationWithTabMenu);
 
+    $('.nav-pills > li ').click(profileTabNavigationHighlight);
+
     $('#clientType').find('a').on('click', changeNavigationIfClientTypeChanged);
 
-    $('#selectLocation').click(function(event){
+    $('#applyLocation').click(function(){
+        $('#location').trigger('click');
+    });
+
+    $('#applyLocationMobile').click(function(){
+        $('#locationMobile').trigger('click');
+    });
+
+    $('.stop-propagation-click').click(function(event){
         event.stopPropagation();
     });
 
@@ -45,5 +55,10 @@
         } else {
             $(this).find('a').tab('show');
         }
+    }
+    function profileTabNavigationHighlight() {
+        $(this).siblings().removeClass('btn-red-branded');
+        $(this).siblings().addClass('btn-default');
+        $(this).addClass('btn-red-branded');
     }
 })();

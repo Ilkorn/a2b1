@@ -15,3 +15,15 @@
     clear: both;
   }
 }
+.naked{
+  border: 0;
+}
+.border-bottom-gray-bold{
+  border-bottom: 2px solid $app-base-gray;
+}
+.padding10{
+  padding: 10px;
+}
+.btn:focus,.btn:active {
+  outline: none !important;
+}

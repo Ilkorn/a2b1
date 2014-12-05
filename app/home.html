@@ -61,14 +61,14 @@
                                 <div class="col-sm-3">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-pills nav-stacked" role="tablist">
-                                        <li role="presentation"><a href="#dairyProduct" aria-controls="home" role="tab" data-toggle="tab">Dairy Product</a></li>
-                                        <li role="presentation"><a href="#eggs" aria-controls="profile" role="tab" data-toggle="tab">Eggs</a></li>
-                                        <li role="presentation"><a href="#bevarages" aria-controls="messages" role="tab" data-toggle="tab">Bevarages</a></li>
-                                        <li role="presentation"><a href="#speciality" aria-controls="settings" role="tab" data-toggle="tab">Speciality</a></li>
-                                        <li role="presentation"><a href="#supplies" aria-controls="settings" role="tab" data-toggle="tab">Supplies</a></li>
+                                        <li role="presentation"><a href="#dairyProduct" aria-controls="dairyProduct" role="tab" data-toggle="tab">Dairy Product</a></li>
+                                        <li role="presentation"><a href="#eggs" aria-controls="eggs" role="tab" data-toggle="tab">Eggs</a></li>
+                                        <li role="presentation"><a href="#bevarages" aria-controls="bevarages" role="tab" data-toggle="tab">Bevarages</a></li>
+                                        <li role="presentation"><a href="#speciality" aria-controls="speciality" role="tab" data-toggle="tab">Speciality</a></li>
+                                        <li role="presentation"><a href="#supplies" aria-controls="supplies" role="tab" data-toggle="tab">Supplies</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-9">
+                                <div class="col-sm-9 hidden-xs">
                                     <!-- Tab panes -->
                                     <div class="tab-content">
                                         <div role="ex1" class="tab-pane active" id="dairyProduct">
@@ -152,14 +152,14 @@
                         <li><a href="#">Dialog 4</a></li>
                     </ul>
                 </li>
-                <li class="dropdown visible-xs visible-sm" >
+                <li id="locationMobile" class="dropdown visible-xs visible-sm" >
                     <a href="#" data-toggle="dropdown">LOCATION<b class="caret"></b></a>
                     <ul class="dropdown-menu" >
                         <li>
-                            <div class="row">
+                            <div class="row stop-propagation-click">
                                 <div class="col-sm-12">Choose you location</div>
-                                <div class="col-sm-12" id="selectLocationMobile">
-                                    <select class="form-control" name="locatin" id="selectLocationMobile" style="border: 0">
+                                <div class="col-sm-12">
+                                    <select class="form-control" name="locatin naked">
                                         <option value="CH">Chicago</option>
                                         <option value="NY">New York</option>
                                     </select>
@@ -206,9 +206,9 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right">
                         <li>
-                            <div class="row">
+                            <div class="row stop-propagation-click">
                                 <div class="col-sm-12">Choose you location</div>
-                                <div class="col-sm-12" id="selectLocation">
+                                <div class="col-sm-12">
                                     <select class="form-control" name="locatin" id="selectLocation" style="border: 0">
                                         <option value="CH">Chicago</option>
                                         <option value="NY">New York</option>
@@ -218,10 +218,7 @@
                                     <div id="applyLocation" class="btn btn-red-branded btn-block">Apply</div>
                                 </div>
                             </div>
-
                         </li>
-
-
                     </ul>
                 </li>
                 <li id="cart" class="dropdown customer-only">
@@ -385,7 +382,7 @@
 
 <!--CONTENT-->
 <div class="container content">
-    <div class="row squers hidden-xs">
+    <div class="row squers ">
         <div class="col-sm-4 item">
             <div class="item-wrapper">
                 <img src="images/sub-menu-1.jpg" alt="It's Truffle Season" class="img-responsive"/>

@@ -40,6 +40,21 @@
     }
   }
 }
+@media (max-width: $screen-sm - 1) {
+  .squers {
+    padding-top: 20px;
+    position: relative;
+
+    .item {
+      position: relative;
+      .item-wrapper {
+        position: relative;
+        margin: 0 auto 20px;
+        width: 340px;
+      }
+    }
+  }
+}
 
 .chef {
   h1 {

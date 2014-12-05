@@ -1851,9 +1851,9 @@ output {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   .form-control:focus {
-    border-color: #555555;
+    border-color: #95012c;
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(85, 85, 85, 0.6); }
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(149, 1, 44, 0.6); }
   .form-control::-moz-placeholder {
     color: #999999;
     opacity: 1; }
@@ -6387,9 +6387,9 @@ button.close {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   .form-control:focus {
-    border-color: #555555;
+    border-color: #95012c;
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(85, 85, 85, 0.6); }
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(149, 1, 44, 0.6); }
   .form-control::-moz-placeholder {
     color: #999999;
     opacity: 1; }
@@ -6468,7 +6468,7 @@ html, body {
   color: #95012c;
   font-weight: 700; }
 
-#login ul {
+#location ul {
   width: 200px;
   padding: 10px; }
 
@@ -6635,6 +6635,10 @@ html, body {
       .footer .subfooter p {
         text-align: center !important; } }
 
+.breadcrumb-block {
+  padding: 20px;
+  margin-bottom: 10px; }
+
 .margin-bottom-clean {
   margin-bottom: 0; }
 
@@ -6649,6 +6653,18 @@ html, body {
     float: left; }
   .col-sm-clear {
     clear: both; } }
+
+.naked {
+  border: 0; }
+
+.border-bottom-gray-bold {
+  border-bottom: 2px solid #949599; }
+
+.padding10 {
+  padding: 10px; }
+
+.btn:focus, .btn:active {
+  outline: none !important; }
 
 .squers {
   padding-top: 20px; }
@@ -6673,6 +6689,17 @@ html, body {
       font-size: 20px;
       padding-top: 5px; }
 
+@media (max-width: 767px) {
+  .squers {
+    padding-top: 20px;
+    position: relative; }
+    .squers .item {
+      position: relative; }
+      .squers .item .item-wrapper {
+        position: relative;
+        margin: 0 auto 20px;
+        width: 340px; } }
+
 .chef h1 {
   font-size: 40px;
   font-weight: 700; }
@@ -6683,5 +6710,34 @@ html, body {
   font-family: Arial, sans-serif;
   font-size: 16px; }
 
-.loginRegistration {
-  padding-top: 20px; }
+.my-profile {
+  height: 100%;
+  padding: 20px; }
+  .my-profile .btn:focus, .my-profile .btn:active {
+    outline: none !important; }
+  .my-profile h3 {
+    color: #949599; }
+    .my-profile h3.red {
+      color: #95012c; }
+  .my-profile a {
+    color: #95012c; }
+  .my-profile .profile-navigation {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e6e6e6; }
+  .my-profile li.active .btn-default {
+    color: #fff;
+    background-color: #95012c;
+    border-color: #7c0126; }
+    .my-profile li.active .btn-default:hover, .my-profile li.active .btn-default:focus, .my-profile li.active .btn-default:active, .my-profile li.active .btn-default.active, .open > .my-profile li.active .btn-default.dropdown-toggle {
+      color: #fff;
+      background-color: #62011e;
+      border-color: #3f0013; }
+    .my-profile li.active .btn-default:active, .my-profile li.active .btn-default.active, .open > .my-profile li.active .btn-default.dropdown-toggle {
+      background-image: none; }
+    .my-profile li.active .btn-default.disabled, .my-profile li.active .btn-default.disabled:hover, .my-profile li.active .btn-default.disabled:focus, .my-profile li.active .btn-default.disabled:active, .my-profile li.active .btn-default.disabled.active, .my-profile li.active .btn-default[disabled], .my-profile li.active .btn-default[disabled]:hover, .my-profile li.active .btn-default[disabled]:focus, .my-profile li.active .btn-default[disabled]:active, .my-profile li.active .btn-default[disabled].active, fieldset[disabled] .my-profile li.active .btn-default, fieldset[disabled] .my-profile li.active .btn-default:hover, fieldset[disabled] .my-profile li.active .btn-default:focus, fieldset[disabled] .my-profile li.active .btn-default:active, fieldset[disabled] .my-profile li.active .btn-default.active {
+      background-color: #95012c;
+      border-color: #7c0126; }
+    .my-profile li.active .btn-default .badge {
+      color: #95012c;
+      background-color: #fff; }
